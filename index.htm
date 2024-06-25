@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+  <meta name="robots" content="noindex" />
+  <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>藥品中心電子報版型</title>
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <!-- hyUI -->
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  <style>
+    .demo_wrap {
+      max-width: 1000px;
+      margin: 0em auto 1em;
+      padding: 15px 15px 3em;
+      clear: both;
+      background: #fff;
+
+    }
+
+    .demo_wrap h1 {
+      display: block;
+      margin: 0px auto;
+
+      display: block;
+      margin-right: 1em;
+      color: rgb(6, 81, 119);
+    }
+
+    @media screen and (max-width: 545px) {
+      .demo_wrap h1 {
+        max-width: 100%;
+        float: none;
+        text-align: center;
+      }
+    }
+
+    hr {
+      border-top: 1px dashed #DDD;
+    }
+
+    .demo_wrap h1 img {
+      width: 300px;
+    }
+
+    .num {
+      width: 12%;
+      text-align: center;
+    }
+
+    body {
+      counter-reset: num;
+    }
+
+    .table_wrapper {}
+
+    table {
+      margin-bottom: 1em;
+      border: 1px solid #ddd;
+      width: 100%;
+      border-collapse: collapse;
+
+    }
+
+    table th {
+      background-color: #F3F3F3;
+      color: #333;
+      border-top: #DDD 1px solid;
+      text-align: left;
+      white-space: nowrap;
+      padding: .5em;
+    }
+
+    table td {
+      border-top: #DDD 1px solid;
+      padding: .5em;
+      text-align: left;
+    }
+
+    table caption {
+      text-align: left;
+      font-weight: bold;
+      font-size: 1.25em;
+      padding: 0.5em 0;
+      color: #ff5050;
+    }
+
+    tbody tr td:first-child:before {
+      counter-increment: num;
+      display: block;
+      text-align: center;
+      content: counters(num, '.') ' ';
+    }
+
+    tbody tr td:nth-child(2) {
+      width: 35%;
+    }
+
+    .btn_grp {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .btn_grp a {
+      display: block;
+      padding: 1em 1.5em;
+      border: 1px solid #ccc;
+      background-color: #eee;
+      border-radius: 5px;
+      color: #333;
+      width: 150px;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 545px) {
+      .btn_grp {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="demo_wrap">
+    <h1>財團法人醫藥品查驗中心 - 電子報</h1>
+    <div class="btn_grp">
+      <a href="https://github.com/HywebU00/hyui_flex" class="btn">切版檔案請按此下載</a>
+    </div>
+    <hr />
+    <div class="table_wrapper">
+      <!-- hyUI 標準頁面 -->
+      <table>
+        <thead>
+          <tr>
+            <th class="num">編號</th>
+            <th>頁面名稱</th>
+            <th>檔案名稱</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>電子報月刊</td>
+            <!-- 連結放到a裡面就好 -->
+            <td><a href="epaper.html">epaper.html</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>epaper_單則</td>
+            <!-- 連結放到a裡面就好 -->
+            <td><a href="epaper_單則.html">epaper_單則.html</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>epaper_多則</td>
+            <!-- 連結放到a裡面就好 -->
+            <td><a href="epaper_多則.html">epaper_多則.html</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>epaper_自訂</td>
+            <!-- 連結放到a裡面就好 -->
+            <td><a href="epaper_自訂.html">epaper_自訂.html</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>epaper_代發活動</td>
+            <!-- 連結放到a裡面就好 -->
+            <td><a href="epaper_代發活動.html">epaper_代發活動.html</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- 專案客製化頁面 -->
+
+    </div>
+  </div>
+  <!-- <a href="javascript:;" class="scrollToTop">回頁首</a> -->
+  <!-- <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="vendor/jquery.easing.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/customize.js"></script> -->
+  <!-- <script>
+    $(function () {
+      $('tbody')
+        .find('a')
+        .each(function (index, el) {
+          var Link = $(this).attr('href');
+          $(this).text(Link);
+        });
+    });
+  </script> -->
+</body>
+
+</html>
